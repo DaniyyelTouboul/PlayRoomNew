@@ -62,9 +62,9 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         TextView genres;
         TextView songName;
         TextView artistName;
-        ImageView videoPhoto;
         TextView songNumber;
         TextView userNumber;
+        ImageView videoPhoto;
 
 
 

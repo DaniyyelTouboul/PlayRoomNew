@@ -20,23 +20,28 @@ import java.util.UnknownFormatFlagsException;
 
 public class HomeFragment extends android.support.v4.app.Fragment {
 
-    String imageUrl = "http://www.atpworldtour.com/-/media/tennis/players/gladiator/2016/daniel_full_16.png";
+    String profileUrl = "https://lh3.googleusercontent.com/-l_QP1zl2r8M/AAAAAAAAAAI/AAAAAAAARWs/Cc31JerPK14/s36-p-k-no/photo.jpg";
+    String videoUrl = "http://www.clipartkid.com/images/10/large-or-small-college-z8lhi2-clipart.jpg";
     private RecyclerView recyclerView;
     ArrayList <Room> rooms;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        try {
-            rooms = new ArrayList<Room>();
+        rooms = new ArrayList<Room>();
+        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
+//        rooms.add(new Room(profileUrl,"Daniel Torman","22:22","Rock, Metal","Poison","Alice Cooper","5","6",videoUrl));
 
-           rooms.add(imageUrl,"2","One","This","This","This","This","This",imageUrl);
 
-       } catch (Exception recyclerViewProblem) {
-            rooms = new ArrayList<>();
-        }
-
-        TextView textView1 = (TextView)getView().findViewById(R.id.testtext);
         recyclerView = (RecyclerView)getView().findViewById(R.id.recycler);
 
         LinearLayoutManager lim = new LinearLayoutManager(getContext());
