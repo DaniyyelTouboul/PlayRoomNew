@@ -28,11 +28,11 @@ public class HomeFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         try {
-            rooms = new ArrayList<>();
-           //error is here ***
-       //     rooms.add("This","2","One");
-            //rooms.add("This", "Daniel Franklin", "22:00", "Rock, Metal", "The man who wore the cape", "JXL", "21", "555", "This");
-        } catch (Exception recyclerViewProblem) {
+            rooms = new ArrayList<Room>();
+
+           rooms.add(imageUrl,"2","One","This","This","This","This","This",imageUrl);
+
+       } catch (Exception recyclerViewProblem) {
             rooms = new ArrayList<>();
         }
 
