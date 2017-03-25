@@ -1,7 +1,6 @@
 package daniyyeltouboul.playroom;
 
 
-import android.graphics.Bitmap;
 
 /**
  * Created by Daniyyel on 28/02/2017.
