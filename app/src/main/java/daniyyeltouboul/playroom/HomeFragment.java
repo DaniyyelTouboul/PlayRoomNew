@@ -29,7 +29,8 @@ public class HomeFragment extends android.support.v4.app.Fragment {
 
         try {
             rooms = new ArrayList<>();
-            rooms.add("This","2","One");
+           //error is here ***
+       //     rooms.add("This","2","One");
             //rooms.add("This", "Daniel Franklin", "22:00", "Rock, Metal", "The man who wore the cape", "JXL", "21", "555", "This");
         } catch (Exception recyclerViewProblem) {
             rooms = new ArrayList<>();
